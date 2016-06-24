@@ -1,5 +1,5 @@
 body {
-    background-color: #272a32;
+    background-color: #e24147;
     color: white;
 }
 
@@ -11,7 +11,7 @@ h1 {
 }
 
 h1.page-title {
-    color: #77d5e8;
+    color: #353439;
     font-weight: lighter;
     font-size: 4em;
     letter-spacing: 0;
@@ -63,7 +63,7 @@ a:hover{
 }
 
 .btn-primary {
-    background-color: #2996bf;
+    background-color: #fad800;
     padding: 0.5em 1.5em;
     border-radius: 0;
     border: none;

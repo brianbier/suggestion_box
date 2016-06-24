@@ -3,21 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Suggestion Box</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+  css/bootstrap.min.css" rel="stylesheet">
   <script src="js/vendor/angular.min.js"></script>
 </head>
-<body ng-app="SuggestionBox">
-  <h1 ng-controller="HomeController"> {{helloWorld}} </h1>
+<body ng-app="SuggestionBox" ng-controller="HomeController" >
+  <h1> {{helloWorld}} </h1>
+
+  <div class="list-item" ng-repeat="post in posts | orderBy: '-upvotes'">
+    <h1>{{post.title}}</h1>
+<!--     <p>
+        <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span>
+        <span class="entry-subtext">Upvotes: {{ post.upvotes }} | <a href="#/suggestion/{{ post.id }}">Comments</a></span>
+      </p> -->
+  </div>
 
 
-  <!-- Module -->
-  <script src="js/app.js"></script>
 
-  <!-- Controllers -->
-  <script src="js/controllers/HomeController.js"></script>
+    <!-- Module -->
+    <script type="text/javascript" src="js/app.js"></script>
 
-  <!-- Directives -->
+    <!-- Controllers -->
+    <script type="text/javascript" src="js/controllers/HomeController.js"></script>
 
-  <!-- Services -->
+    <!-- Directives -->
 
-</body>
-</html>
+    <!-- Services -->
+    <script type="text/javascript" src="js/services/suggestions.js"></script>
+
+  </body>
+  </html>
